@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    background-color: #000000;
+}
+
+h1 {
+    margin-bottom: 10vw;
+    font-size: 8vw;
+    color: #ffffff;
+}
+
+#movie_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.movie {
+    width: 30vw;
+    background-color: #ffffff;
+    padding-bottom: 2.5vw;
+}
+
+.movie img {
+    width: 100%;
+}
+
+#p_text{
+    display: column;
+    justify-content: center;
+}
+
+.movie p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 2.5vw;
+    color: #000000;
+}
+
+#title {
+    font-size: 3vw;
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto; 
+    z-index: 1000;
+    padding: 5vw 0;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: 80vw;
+    color: #fff;
+    padding: 5vw;
+    position: relative;
+    text-align: left;
+    margin-bottom: 10vw;
+}
+
+.modal-content img {
+    width: 50vw;
+    margin: 0 auto 2vw auto;
+    display: block;
+}
+
+.modal-content #title {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2vw;
+}
+
+.modal-content p {
+    font-size: 3vw;
+    color: #ffffff;
+    margin-bottom: 2vw;
+}
+
+.close {
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+    font-size: 10vw;
+    color: #ffffff;
+}
